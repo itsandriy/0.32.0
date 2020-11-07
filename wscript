@@ -910,6 +910,11 @@ standalone_features = [
         'deps': 'os-win32 || !(!(os-cygwin))',
         'func': check_ctx_vars('WINDRES')
     }, {
+        'name': '--apple-remote',
+        'desc': 'Apple Remote support',
+        'deps': 'cocoa',
+        'func': check_true
+    }, {
         'name': '--macos-touchbar',
         'desc': 'macOS Touch Bar support',
         'deps': 'cocoa',
@@ -923,11 +928,6 @@ standalone_features = [
         'desc': 'macOS 10.11 SDK Features',
         'deps': 'cocoa',
         'func': check_macos_sdk('10.11')
-    }, {
-        'name': '--macos-10-12-2-features',
-        'desc': 'macOS 10.12.2 SDK Features',
-        'deps': 'cocoa',
-        'func': check_macos_sdk('10.12.2')
     }, {
         'name': '--macos-10-14-features',
         'desc': 'macOS 10.14 SDK Features',

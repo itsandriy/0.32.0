@@ -174,7 +174,6 @@ def build(ctx):
             ( "osdep/macos/mpv_helper.swift" ),
             ( "osdep/macos/swift_extensions.swift" ),
             ( "osdep/macos/swift_compat.swift" ),
-            ( "osdep/macos/remote_command_center.swift", "macos-media-player" ),
             ( "video/out/cocoa-cb/events_view.swift" ),
             ( "video/out/cocoa-cb/video_layer.swift" ),
             ( "video/out/cocoa-cb/window.swift" ),
@@ -546,6 +545,7 @@ def build(ctx):
 
         ( "osdep/android/posix-spawn.c",         "android"),
         ( "osdep/android/strnlen.c",             "android"),
+        ( "osdep/ar/HIDRemote.m",                "apple-remote" ),
         ( "osdep/glob-win.c",                    "glob-win32" ),
         ( "osdep/macosx_application.m",          "cocoa" ),
         ( "osdep/macosx_events.m",               "cocoa" ),
