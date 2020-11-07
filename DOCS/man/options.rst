@@ -3554,6 +3554,10 @@ Input
 
     See `JSON IPC`_ for details.
 
+``--input-appleremote=<yes|no>``
+    (OS X only)
+    Enable/disable Apple Remote support. Enabled by default (except for libmpv).
+
 ``--input-gamepad=<yes|no>``
     Enable/disable SDL2 Gamepad support. Disabled by default.
 
